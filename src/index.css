@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  --font-editorial: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-bg-primary: #030817;
+  --color-bg-secondary: #071329;
+  --color-surface: #0B1530;
+  --color-text-primary: #F4F5F7;
+  --color-text-secondary: #A8B2C5;
+  --color-text-muted: #66738A;
+  --color-accent-cyan: #58D6FF;
+  --color-accent-teal: #55E6C1;
+  --color-accent-orange: #FFB36B;
+  --color-accent-pink: #FF6B9A;
+  --color-border-subtle: rgba(120, 150, 200, 0.18);
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #030817;
+  color: #F4F5F7;
+  overflow-x: hidden;
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #030817;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(120, 150, 200, 0.25);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #58D6FF;
+}
+
+/* Subtle topographic background patterns */
+.topographic-bg {
+  background-image: radial-gradient(circle at 50% 50%, rgba(88, 214, 255, 0.03) 0%, transparent 60%),
+    radial-gradient(circle at 80% 20%, rgba(255, 179, 107, 0.02) 0%, transparent 50%);
+}
+
+.contour-lines {
+  background-size: 80px 80px;
+  background-image: 
+    linear-gradient(to right, rgba(120, 150, 200, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(120, 150, 200, 0.04) 1px, transparent 1px);
+}
+
